@@ -35,6 +35,8 @@ header {
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
+    margin: 0 auto;
+    width: 20rem;
 }
 
 .subtitle {
@@ -43,11 +45,13 @@ header {
     font-size: 10px;
     line-height: 20px;
     padding-bottom: 1.7rem;
+    margin: 0 auto;
 }
 
 #form {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 #form label {
@@ -58,7 +62,7 @@ header {
 
 #email, .senha {
     border-radius: 4px;
-    width: 20.7rem;
+    width: 20rem;
     padding: 0.75rem 0.75rem 0.75rem 2.5rem;
     background-repeat: no-repeat;
     background-position: left center;
@@ -67,7 +71,7 @@ header {
 }
 
 #email {
-    background-color: #191816;
+    background-color: transparent;
     background-image: url(./assets/images/mail.svg);
     border: solid #868686 1px;
 }
@@ -83,13 +87,14 @@ header {
 
 #senha {
     position: absolute;
-    left: 20px;
+    left: 50%;
+    margin: 0 0 0 -10rem;
     background-color: transparent;
     border: solid 1px #868686;
     padding: 0.75rem 0.75rem 0.75rem 2.5rem;
     border-radius: 4px;
     line-height: 0;
-    width: 20.7rem;
+    width: 20rem;
 }
 
 #email:focus, #senha:focus {
@@ -109,7 +114,7 @@ header {
 }
 
 .eye {
-    background-color: #191816;
+    background-color: transparent;
     padding: 0;
     border: none;
     line-height: 0;
@@ -126,7 +131,7 @@ header {
     color: #868686;
     font-size: 14px;
     font-weight: 400;
-    width: 20.7rem;
+    width: 20rem;
     margin-bottom: 1.25rem;
 }
 
@@ -177,7 +182,7 @@ input[type=checkbox]:checked:before {
 
 button[type=submit] {
     padding: 1px 24px;
-    width: 20.7rem;
+    width: 20rem;
     height: 51px;
     background-color: #FFC632;
     border: none;
@@ -193,7 +198,7 @@ button[type=submit] {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20.7rem;
+    width: 20rem;
 }
 
 .registre a {
@@ -202,13 +207,73 @@ button[type=submit] {
     font-size: 14px;
 }
 
-@media (min-width: 425px) {
+@media (max-width: 320px) {
     .container {
-        padding-left: 45px;
-        padding-right: 45px;
+        width: 100vw;
+        padding-left: 8px;
+    }
+
+    #email, .senha, #senha, .checkbox-container, button[type=submit], .registre {
+        width: 95vw;
     }
 
     #senha {
-        left: 45px;
+        margin: 0;
+        left: 8px;
+    }
+
+    #form {
+        margin: 0;
+    }
+}
+
+@media (min-width: 481px) {
+    .container {
+        width: 80%;
+        top: 20%;
+        left: 10%;
+        background-color: #24221F;
+        border-radius: 4px;
+        padding: 55px 120px 55px 120px;
+    }
+
+    #senha {
+        left: 50%;
+        margin: 0 0 0 -10rem;
+    }
+
+    input[type=checkbox]:before {
+        background-color: #24221F;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-image: url(./assets/images/side-image.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 50%;
+    }
+
+    .container {
+        width: 40%;
+        top: 20%;
+        left: 5%;
+        background-color: #24221F;
+        border-radius: 4px;
+        padding: 55px 0 55px 0;
+    }
+
+    #form {
+        margin: 0 auto;
+    }
+
+    #senha {
+        left: 50%;
+        margin: 0 0 0 -10rem;
+    }
+
+    input[type=checkbox]:before {
+        background-color: #24221F;
     }
 }
