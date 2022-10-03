@@ -74,6 +74,7 @@ header {
     background-color: transparent;
     background-image: url(./assets/images/mail.svg);
     border: solid #868686 1px;
+    color: #AFB6C2;
 }
 
 .senha {
@@ -83,6 +84,7 @@ header {
     justify-content: space-between;
     border: none;
     background-image: url(./assets/images/lock.svg);
+    z-index: 1;
 }
 
 #senha {
@@ -95,6 +97,8 @@ header {
     border-radius: 4px;
     line-height: 0;
     width: 20rem;
+    z-index: 2;
+    color: #AFB6C2;
 }
 
 #email:focus, #senha:focus {
@@ -118,10 +122,7 @@ header {
     padding: 0;
     border: none;
     line-height: 0;
-}
-
-.eye:focus {
-    background-image: url(./assets/images/eye-focus.svg);
+    z-index: 100;
 }
 
 .checkbox-container {
