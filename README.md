@@ -44,9 +44,9 @@ O desafio consistia em reproduzir o login form apresentado, tornando responsivo.
 As imagens a seguir apresentam o resultado final, para diferentes tamanhos de tela:
 
 <div style="display:flex">
-  <img src='https://github.com/NathiMT/login_form/blob/main/assets/images-readme/mobile-login-form.png' alt = 'Celular' height = '350px'>
-  <img src='https://github.com/NathiMT/login_form/blob/main/assets/images-readme/tablet-login-form.png' alt = 'Tablet' height = '350px'>
-  <img src='https://github.com/NathiMT/login_form/blob/main/assets/images-readme/desktop-login-form.png' alt = 'Desktop' height = '300px'>
+  <img src='https://github.com/NathiMT/login_form/blob/main/assets/images-readme/mobile-login-form.png' alt = 'Celular' height = '250px'>
+  <img src='https://github.com/NathiMT/login_form/blob/main/assets/images-readme/tablet-login-form.png' alt = 'Tablet' height = '250px'>
+  <img src='https://github.com/NathiMT/login_form/blob/main/assets/images-readme/desktop-login-form.png' alt = 'Desktop' height = '200px'>
 </div>
 
 Veja o resultado no link abaixo!
